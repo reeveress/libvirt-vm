@@ -1,0 +1,4 @@
+bridge.conf: /etc/qemu/bridge.conf
+mcvm.xml:    /etc/libvirt/qemu/mcvm.xml
+interfaces:  /etc/network/interfaces
+

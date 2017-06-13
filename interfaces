@@ -1,0 +1,23 @@
+# interfaces(5) file used by ifup(8) and ifdown(8)
+auto lo
+iface lo inet loopback
+
+# The primary network interface
+auto br0
+
+# Use old eth0 config for br0, plus bridge stuff
+iface br0 inet dhcp
+    bridge_ports    eno1
+    bridge_stp      off
+    bridge_maxwait  0
+    bridge_fd       0
+
+# Bridge USB ethernet interface to br1 
+auto br1
+iface br1 inet static
+    address         10.10.10.10
+    netmask         255.255.255.0
+    bridge_ports    enx8cae4cfd2050 
+    bridge_stp      off
+    bridge_maxwait  0
+    bridge_fd       0
