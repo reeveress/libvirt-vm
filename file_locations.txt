@@ -1,5 +1,13 @@
+Virtual machine files:
+
 bridge.conf: /etc/qemu/bridge.conf
-mcvm.xml:    /etc/libvirt/qemu/mcvm.xml
-interfaces:  /etc/network/interfaces
 rc.local: /etc/rc.local
 dnsmasq: /etc/dnsmasq.conf
+hosts: /etc/hosts
+ethers: /etc/ethers
+
+
+Host machine files:
+virtual machine file: ~/ubuntuvm
+mcvm.xml:    /etc/libvirt/qemu/mcvm.xml
+interfaces:  /etc/network/interfaces
