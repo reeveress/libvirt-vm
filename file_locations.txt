@@ -8,6 +8,6 @@ ethers: /etc/ethers
 
 
 Host machine files:
-virtual machine file: ~/ubuntuvm
+virtual machine file: ~/hera-digi-vm/ubuntu.qcow2
 mcvm.xml:    /etc/libvirt/qemu/mcvm.xml
 interfaces:  /etc/network/interfaces
